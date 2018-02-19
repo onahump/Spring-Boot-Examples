@@ -33,8 +33,8 @@ public class FakeStudentDaoImpl implements StudentDao {
 	}
 
 	@Override
-	public int updateStudentById(UUID studentId, Student newStudent){
-		database.put(studentId, newStudent);
+	public int updateStudentById(UUID studentId, Student studentUpdate){
+		database.put(studentId, studentUpdate);
 		return 1;
 	}
 

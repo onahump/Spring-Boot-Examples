@@ -4,12 +4,15 @@ import com.makingdevs.demo.dao.StudentDao;
 import com.makingdevs.demo.model.Student;
 import java.util.List;
 import java.util.UUID;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public interface StudentService {
 
 	private final StudentDao studentDao;
 
-	public StudentService(StudentDao studentDao){
+	@Autowired
+	public StudentService(@Qualifier("fakeDao") StudentDao studentDao){
 		this.studentDao = studentDao;
 	}
 

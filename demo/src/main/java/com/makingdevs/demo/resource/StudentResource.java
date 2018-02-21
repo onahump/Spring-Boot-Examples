@@ -47,4 +47,25 @@ public class StudentResource{
     public void insertNewStudent(@RequestBody Student student){
         studentService.persistNewStudent(UUID.randomUUID(), student);
     }
+
+    @RequestMapping(
+            method = RequestMethod.PUT,
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            path = "{studentId}"
+    )
+
+    public void updateStudend(@PathVariable("studentId") UUID studentId, @RequestBody Student student){
+        studentService.updateStudentById(studentId, student);
+    }
+
+    @RequestMapping(
+            method = RequestMethod.DELETE,
+            path = "{studentId}",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+
+    public void deleteStudendById(@PathVariable("studentId") UUID studentId){
+        studentService.deleteStudentById(studentId);
+    }
+
 }

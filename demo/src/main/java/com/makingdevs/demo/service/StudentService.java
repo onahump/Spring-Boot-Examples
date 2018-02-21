@@ -19,7 +19,7 @@ public class StudentService {
 	}
 
 	public int persitNewStudent(UUID studentId, Student student){
-		UUID studentId = studentId == null ? UUID.randomUUID() : studentId;
+		studentId = studentId == null ? UUID.randomUUID() : studentId;
 		return studentDao.insertNewStudent(studentId, student);
 	}
 

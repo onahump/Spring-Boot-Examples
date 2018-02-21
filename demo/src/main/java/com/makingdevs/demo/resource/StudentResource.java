@@ -3,7 +3,6 @@ package com.makingdevs.demo.resource;
 import com.makingdevs.demo.model.Student;
 import com.makingdevs.demo.service.StudentService;
 
-import java.awt.*;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

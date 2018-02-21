@@ -25,7 +25,7 @@ public class FakeStudentDaoImpl implements StudentDao {
 
 	@Override
 	public Student selectStudentById(UUID studentId){
-		database.get(studentId);
+		return database.get(studentId);
 	}
 
 	@Override

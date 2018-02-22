@@ -4,7 +4,7 @@ public class InvoiceEntity {
 	
 	private String businessName
 	private String rfc
-	private List<concept> concepts 
+	private List<Concept> concepts
 
 	public String toString(){
 		"$businessName / $rfc" 

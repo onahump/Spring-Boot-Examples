@@ -1,4 +1,4 @@
-package com.makingdevs.demo.contoller;
+package com.makingdevs.demo.resource;
 
 import com.makingdevs.demo.model.Student;
 import com.makingdevs.demo.service.StudentService;
@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/v1/students")
-public class StudentController {
+public class StudentResource{
 
     private final StudentService studentService;
 
     @Autowired
-    public StudentController(StudentService studentService){
+    public StudentResource(StudentService studentService){
         this.studentService = studentService;
     }
 

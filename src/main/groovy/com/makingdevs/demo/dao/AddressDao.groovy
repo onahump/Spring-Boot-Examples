@@ -2,7 +2,7 @@ package com.makingdevs.demo.dao
 
 import org.springframework.data.repository.CrudRepository
 
-import com.makingdevs.demo.model.Invoice
+import com.makingdevs.demo.model.Address
 /*
 public interface InvoiceDao {
 
@@ -17,6 +17,6 @@ public interface InvoiceDao {
     int deleteInvoiceById(UUID invoiceId)
 }
 */
-interface InvoiceDao extends CrudRepository<Invoice, Long>{
+interface AddressDao extends CrudRepository<Invoice, Long>{
 	
 }

@@ -15,5 +15,5 @@ public class InvoiceEntity {
 
 	private String businessName
 	private String rfc
-	private List<Concept> concepts
+	private Address address
 }
